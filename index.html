@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Bootstrap Section -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+*{
+  box-sizing: border-box;
+
+}
+#whole-body{
+  
+  
+}
+    body{
+      font-family: 'Bai jamjuree', sans-serif;
+      
+    }
+/* Header Section */
+#header{
+  background-image: url('images/bg-header-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  text-align: center;
+font-family: 'Bai jamjuree';
+font-size: 18px;
+}
+.container-header{
+ padding: 4% 20%;
+ justify-content: center;
+}
+.header-image{
+  width: 20%;
+  padding: 3%;
+}
+.heading{
+  font-weight: 600;
+}
+.header-text{
+color:grey;
+}
+.button{
+  background-color: #62C8B7;
+  color:white;
+  margin: 8px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 16px;
+}
+.btn-header{
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 16px;
+}
+.button:hover{
+  background-color: #1da790;
+  color: white;
+} /*...Header section closed */
+
+/* Keep track Section */
+#keep-track{
+  text-align: center;
+  font-family: 'Bai jamjuree', sans-serif;
+}
+.keep-track-container{
+  padding: 4% 18%;
+}
+.keep-track-header{
+  font-weight:bold ;
+} 
+.keep-track-text{
+  font-size: 18px;
+  color:grey;
+}/*Keep track section closed*/
+
+/* Cloud Info Section */
+#cloud-info{
+  padding: 4%;
+  font-family: 'Bai jamjuree', sans-serif;
+  
+  
+}
+.cloud-info-container{
+margin: 0;
+padding: 1% 12%;
+
+}
+.cloud-image{
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 30px;
+
+}
+.cloud-info-header{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.cloud-info-text{
+color:grey;
+
+}
+.cloud{
+  padding: 1% 10%; 
+  margin-top: 5px;
+}
+
+/* Access Section */
+#access{
+  text-align: center;
+  font-family: 'Bai jamjuree', sans-serif;
+}
+.access-container{
+  padding: 5% 20%;
+}
+.access-header{
+  font-weight: bold;
+}
+.access-text{
+  font-size: 18px;
+}
+.access-image{
+  width: 55%;
+}/*access section closed*/
+
+/* Workflow Section */
+#workflow{
+  text-align: center;
+  padding: 4% 15%;
+
+}
+.workflow-header{
+  font-weight: bold;
+}
+.workflow-text{
+  font-size: 18px;
+  color:grey;
+}/*workflow closed*/
+
+/* Create Section */
+#create{
+  padding: 4% 8%;
+  
+}
+.create-container{
+  display: flex;
+margin-top: -50px;
+}
+.create{
+  padding: 8px;
+  text-align: center;
+}
+.create-image{
+  margin-bottom: 20px;
+  width: 15%;
+  
+}
+.create-header{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.create-text{
+  font-size: 18px;
+  color:grey
+}/*create closed*/
+
+/* Image Section */
+#image{
+  padding: 4% 12%;
+  
+}
+.image-container{
+display: flex;
+flex-direction: row;
+
+}
+.image{
+  padding: 4% 4%;
+  width:5px;
+}
+
+/* Clipboard section */
+#clipboard{
+  padding: 4% 8%;
+text-align: center;
+}
+.clipboard-header{
+ 
+  font-weight: bold;
+}
+.clipboard-container{
+  padding:2% 18%;
+}
+.clipboard-text{
+  font-size: 18px;
+  color:grey;
+  margin: 0;
+}
+.clipboard-btn-one{
+  background-color: #62C8B7;
+  color:white;
+  margin: 8px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 9px 16px;
+  border: none;
+
+}
+.clipboard-btn-two{
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 16px; 
+
+}
+.clipboard-btn-one:hover{
+  background-color: #1da790;
+  color: white;
+}
+
+/* Contact section */
+#contact{
+padding: 4% 15%;
+font-size: 18px;
+background-color:rgb(253, 250, 250);
+}
+.contact-container{
+  display: flex;
+  
+  
+
+}
+.contact-logo-image{
+  width:50px;
+  height: 50px;
+  
+}
+li{
+  list-style-type: none;
+
+
+}
+li a{
+  color:grey;
+  font-size: 16px;
+  text-decoration: none;
+margin-left: 30px;
+padding: 10px;
+
+}
+.social-icon{
+  display: flex;
+  padding: 8px;
+}
+@media (max-width:1198px){
+  .contact-container{
+  flex-flow: wrap;
+  margin: 30px;
+  padding: 2%;
+
+    
+  }
+
+ }
+
+@media(max-width:1155px) {
+  .image-container{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .image{
+    width:25%;
+    padding: 8px 16px;
+    
+  }
+} 
+  </style>
+</head>
+<body>
+  <section id="whole-body">
+
+  
+<header class="header" id="header">
+  <div class="container container-header">
+    <img class="header-image" src="images/logo.svg" alt="">
+    <h1 class="heading">A history of everything you copy</h1>
+
+    <p class="header-text"> Clipboard allows you to track and organize everything you 
+     copy. Instantly access your clipboard on all your devices.</p>
+   
+      <a class="btn  button" href=""> Download for iOS</a> 
+      <a class="btn btn-primary btn-header" href="">Download for Mac</a> 
+  </div>
+
+</header>
+  
+<section id="keep-track">
+  <div class="container keep-track-container">
+    <h3 class="keep-track-header">Keep track of your snippets</h3>
+
+    <p class="keep-track-text">Clipboard instantly stores any item you copy in the cloud, 
+      meaning you can access your snippets immediately on all your 
+      devices. Our Mac and iOS apps will help you organize everything.
+    </p>
+  </div>
+  
+</section>
+ 
+<section id="cloud-info">
+<div class="container cloud-info-container">
+
+
+  <div class="row gx-5">
+
+    <div class="col-lg-6 col-md-6">
+      <img class="cloud-image" src="images/image-computer.png" alt="">
+    </div>
+
+    <div class="col-lg-6 col-md-6">
+      <div class="cloud">
+        <h3 class="cloud-info-header"> Quick Search</h3>
+        <p class="cloud-info-text">  Easily search your snippets by content, category, web address, application, and more.</p>
+      </div>
+    
+      <div class="cloud">
+        <h3  class="cloud-info-header">iCloud Sync</h3>
+        <p class="cloud-info-text">Instantly saves and syncs snippets across all your devices.</p>
+      </div>
+    
+      <div class="cloud">
+        <h3  class="cloud-info-header">Complete History</h3>
+        <p class="cloud-info-text">
+         Retrieve any snippets from the first moment you started using the app.</p>
+      </div>  
+    </div>
+</div>
+
+</div>
+</section>
+
+<section id="access">
+  <div class="container ">
+
+    <div class="access-container">
+      <h3 class="access-header">Access Clipboard anywhere</h3>
+      <p class="access-text">
+        Whether you’re on the go, or at your computer, you can access all your Clipboard 
+        snippets in a few simple clicks.</p>
+    </div>
+
+<img class="access-image" src="images/image-devices.png" alt="">
+
+  </div>
+
+</section>
+
+<section id="workflow">
+  <div class="container workflow-container">
+  
+    <h3 class="workflow-header">Supercharge your workflow</h3>
+    <p class="workflow-text">We’ve got the tools to boost your productivity.</p>
+  </div>
+
+</section>
+
+<section id="create">
+  <div class="container create-container">
+
+    <div class="row">
+
+<div class="col-lg-4 col-md-4">
+  <div class="create">
+    <img class="create-image" src="images/icon-blacklist.svg" alt="">
+    <h3 class="create-header">Create blacklists</h3>
+    <p class="create-text"> Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+    </p>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-4">
+  <div class="create">
+    <img class="create-image" src="images/icon-text.svg" alt="">
+    <h3 class="create-header">  Plain text snippets</h3>
+    <p class="create-text">  Remove unwanted formatting from copied text for a consistent look.</p>
+    
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-4">
+  <div class="create">
+    <img class="create-image" src="images/icon-preview.svg" alt="">
+   <h3 class="create-header">Sneak preview</h3>
+    <p class="create-text">  Quick preview of all snippets on your Clipboard for easy access.</p>
+    
+  </div>
+</div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<section id="image">
+<div class="container image-container">
+
+
+      <img class="image" src="images/logo-google.png" alt="" style="width:20%;">
+  
+
+
+      <img class="image" src="images/logo-ibm.png" alt="" style="width:20%;">
+  
+
+    
+      <img class="image" src="images/logo-microsoft.png" alt="" style="width:20%;">
+   
+
+ 
+      <img class="image" src="images/logo-hp.png" alt="" style="width:20%;">
+
+
+
+      <img class="image" src="images/logo-vector-graphics.png" alt="" style="width:20%;">
+    
+
+  
+ 
+  
+  
+  
+  
+</div>
+</section>
+ 
+
+<section id="clipboard">
+ <div class="container">
+   <div class="clipboard-container">
+    <h3 class="clipboard-header">Clipboard for iOS and Mac OS</h3>
+    <p class="clipboard-text">Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+      and you’re ready to start adding to your clipboard.</p>
+   </div>
+
+
+  <a class="btn btn-dark clipboard-btn-one" href=""> Download for iOS</a>
+  <a class="btn btn-primary clipboard-btn-two" href="">  Download for Mac</a>
+ </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-container">
+
+<img class="contact-logo-image" src="images/logo.svg" alt="">
+
+    <ul>
+      <li>
+        <a href="">FAQs</a>
+      </li>
+  
+      <li>
+        <a href="">Contact Us</a>
+      </li>
+    </ul>
+  
+    <ul>
+      <li>
+        <a href="">Privacy Policy</a>
+      </li>
+      
+      <li>
+        <a href="">Press Kit</a>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <a href=""> Install Guide</a>
+      </li>
+      
+    </ul>
+    
+<div>
+
+
+<ul class="social-icon">
+  <li>
+    <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+  </li>
+  
+  <li>
+    <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+  </li>
+
+  <li>
+    <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+  </li>
+</ul> 
+</div>
+  </div>
+ 
+
+</section>
+
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</section>
+</body>
+</html>
